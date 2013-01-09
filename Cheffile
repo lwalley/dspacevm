@@ -5,6 +5,6 @@ site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
 cookbook 'build-essential'
-cookbook 'postgresql'
+cookbook 'database'
 cookbook 'tomcat'
 
