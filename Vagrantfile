@@ -68,6 +68,7 @@ Vagrant::Config.run do |config|
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
     chef.provisioning_path = "/tmp/vagrant-chef"
+    chef.log_level = :debug
 
     chef.add_recipe "apt"
     chef.add_recipe "build-essential"
