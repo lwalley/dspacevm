@@ -1,10 +1,7 @@
 #!/usr/bin/env ruby
-#^syntax detection
 
 site 'http://community.opscode.com/api/v1'
+# @see https://github.com/opscode-cookbooks
 
-cookbook 'apt'
-cookbook 'build-essential'
-cookbook 'database'
-cookbook 'tomcat'
-
+cookbook 'dspace',
+  :git => 'git://github.com/lwalley/dspace.git'

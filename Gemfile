@@ -5,5 +5,7 @@ source :rubygems
 gem "chef"
 gem "knife-solo"
 gem "librarian"
-# Vagrant already installed from Package as recommended by Vagrant docs, but could be installed as gem
+# Vagrant should already be installed from package as recommended by Vagrant docs.
+# @see http://docs.vagrantup.com/v1/docs/getting-started/index.html
+# Alternatively install as gem:
 # gem "vagrant"

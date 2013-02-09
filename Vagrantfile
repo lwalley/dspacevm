@@ -70,23 +70,14 @@ Vagrant::Config.run do |config|
     chef.provisioning_path = "/tmp/vagrant-chef"
     chef.log_level = :debug
 
-    chef.add_recipe "apt"
-    chef.add_recipe "build-essential"
-    chef.add_recipe "postgresql::server"
-    chef.add_recipe "tomcat"
+    chef.add_recipe "dspace"
 
     chef.json = {
       :postgresql => {
         :password => {
           :postgres => "secret"
-        }
+        },
       },
-      :java => {
-        :install_flavor => "oracle",
-        :oracle => {
-          :accept_oracle_download_terms => true,
-        }
-      }
     }
 
   end
